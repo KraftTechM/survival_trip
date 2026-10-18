@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eight Kilometers: Survival Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <h1>Eight Kilometers</h1>
+            <p>Survival Training: Suburb to Safety</p>
+            <button id="start-btn">Start Training</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="top-bar">
+                <span id="node-title"></span>
+                <button id="quit-btn">Quit & See Results</button>
+            </div>
+            <div class="progress-bar"><div id="progress-fill"></div></div>
+            <div id="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container"></div>
+                <div id="feedback-container" class="hidden"></div>
+                <button id="next-btn" class="hidden">Next Question</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <h1>Results</h1>
+            <div id="score-summary"></div>
+            <div id="review-list"></div>
+            <button id="restart-btn">Try Again</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
